@@ -1,30 +1,23 @@
-# Workforce-Tracking-System
-The purpose of this system is to build a centralized, secure, scalable, and role-based Intern Management &amp; Workforce Tracking Platform that can later be integrated into the Uptoskills ecosystem and portal.
+# Workforce Tracking System
 
-## Suggested Folder structure
+## Overview
 
-frontend/
-├── app/
-├── features/
-│   ├── auth/
-│   ├── attendance/
-│   ├── ratings/
-│   ├── notifications/
-│   └── dashboard/
-│
-├── shared/
-│   ├── components/
-│   ├── hooks/
-│   ├── utils/
-│   ├── api/
-│   └── types/
-│
-├── store/
-└── layouts/
+The Workforce Tracking System is a centralized, secure, scalable, and role-based Intern Management & Workforce Tracking Platform designed for organizations, training institutes, and internship programs.
 
+The system aims to streamline workforce operations by providing attendance tracking, performance monitoring, ratings, notifications, audit logging, and user management through a unified platform.
+
+This project is being developed with a modular monolith architecture, allowing rapid development today while maintaining a clear path toward future microservice extraction if required.
+
+---
+
+## Architecture
+
+### Backend Architecture
+
+```text
 backend/
-├── modules/
 │
+├── modules/
 │   ├── auth/
 │   │   ├── controllers/
 │   │   ├── services/
@@ -32,7 +25,7 @@ backend/
 │   │   ├── validators/
 │   │   ├── routes/
 │   │   └── types/
-│
+│   │
 │   ├── users/
 │   ├── attendance/
 │   ├── ratings/
@@ -53,3 +46,29 @@ backend/
 │
 ├── config/
 └── app.ts
+```
+
+### Frontend Architecture
+
+```text
+frontend/
+│
+├── app/
+│
+├── features/
+│   ├── auth/
+│   ├── attendance/
+│   ├── ratings/
+│   ├── notifications/
+│   └── dashboard/
+│
+├── shared/
+│   ├── components/
+│   ├── hooks/
+│   ├── utils/
+│   ├── api/
+│   └── types/
+│
+├── store/
+└── layouts/
+```
