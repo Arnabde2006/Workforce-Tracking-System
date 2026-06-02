@@ -45,7 +45,7 @@ backend/
 │   └── storage/
 │
 ├── config/
-└── app.ts
+└── app.js
 ```
 
 ### Frontend Architecture
